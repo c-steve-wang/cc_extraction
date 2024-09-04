@@ -43,7 +43,6 @@ with open(input_file, 'r') as infile, open(output_file_jsonl, 'w') as jsonl_file
 
             number_sentences = extract_sentences_with_numbers_using_llm(body)
 
-            # Write the result to the JSONL file
             output_data = {
                 'url': url,
                 'title': title,
