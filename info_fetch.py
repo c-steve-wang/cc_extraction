@@ -8,8 +8,8 @@ from tqdm import tqdm
 def parse_args():
     parser = argparse.ArgumentParser(description="Extract death and fatality numbers from articles")
     parser.add_argument('--model_name', type=str, default="google/gemma-2-9b-it", help="The name of the model to use")
-    parser.add_argument('--input_file', type=str, default='earthquake_extraction.jsonl', help="Input file in JSONL format")
-    parser.add_argument('--output_file', type=str, default='earthquake_fatalities_number_sentences.jsonl', help="Output file in JSONL format")
+    parser.add_argument('--input_file', type=str, required=True, help="Input file in JSONL format")
+    parser.add_argument('--output_file', type=str, required=True, help="Output file in JSONL format")
     return parser.parse_args()
 
 # Extract death and fatality numbers from body and title
