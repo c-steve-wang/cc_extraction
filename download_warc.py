@@ -6,6 +6,7 @@ import gzip
 import shutil
 import argparse
 
+
 # Base URL for the Common Crawl data
 base_url = 'https://data.commoncrawl.org/'
 
