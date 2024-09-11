@@ -17,4 +17,4 @@ python sentence_extract.py --model_name "google/gemma-2-27b-it" \
 ## 3. Single file LLM data extraction
 
 
-### 3.1. Batch processing
+### Optional: Batch processing
