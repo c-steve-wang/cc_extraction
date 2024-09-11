@@ -14,6 +14,10 @@ python sentence_extract.py --model_name "google/gemma-2-27b-it" \
 ```
 
 ## 3. Single file LLM data extraction
-
+```bash
+python info_fetch.py  --model_name hf_model_name \
+                      --input_file path_to_input.jsonl \
+                      --output_file path_to_output.jsonl
+```
 
 ### Optional: Batch processing
