@@ -31,7 +31,7 @@ def process_jsonl_files(input_folder, output_folder):
         
         # Call the db_warc.py script with the necessary arguments using subprocess
         subprocess.run([
-            'python', 'db_warc.py', 
+            'python', 'info_fetch.py', 
             '--model_name', model_name, 
             '--input_file', input_file, 
             '--output_file', output_file
