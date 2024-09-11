@@ -9,7 +9,7 @@ python download_warc.py --start_date yyyy/mm/dd --end_date yyyy/mm/dd --save_fol
 ## 2. Keyword mathcing and format converter
 
 ```bash
-python sentence_extract.py --input_folder path_to_save_folder   # the save folder from download 
+python key_search.py --input_folder path_to_save_folder   # the save folder from download 
 ```
 
 ## 3. Single file LLM data extraction
@@ -20,3 +20,8 @@ python info_fetch.py  --model_name hf_model_name \     # default set is "google/
 ```
 
 ### Optional: Batch processing
+```bash
+python batch_process.py  --input_folder path_to_input_folder --output_folder path_to_output_folder
+                      
+```
+
