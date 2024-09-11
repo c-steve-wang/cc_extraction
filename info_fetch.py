@@ -37,7 +37,7 @@ def extract_death_and_fatality_numbers(body, title, tokenizer, model, device):
 
     # Decoding the generated tokens to text
     response_text = tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
-    print(response_text)
+    # print(response_text)
 
     # Parsing the response based on predefined format
     death_count = "0"
